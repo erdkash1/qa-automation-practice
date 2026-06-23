@@ -45,4 +45,16 @@ class LoginTests {
         WebElement message = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("flash")));        String messageText = message.getText();
         assertTrue(messageText.contains("You logged into a secure area!"));
     }
+
+    @Test
+    void shouldShowErrorWithInvalidUsername() {
+        driver.get(BASE_URL);
+        driver.findElement(By.id("username")).sendKeys("wronguser");
+        driver.findElement(By.id("password")).sendKeys("password123!");
+        driver.findElement(By.cssSelector("button[type='submit']")).click();
+        WebElement message = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("flash")));        String messageText = message.getText();
+        assertTrue(messageText.contains("Your username is invalid!"));
+
+
+    }
 }
