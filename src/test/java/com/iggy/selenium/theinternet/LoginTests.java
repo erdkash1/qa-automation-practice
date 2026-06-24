@@ -52,13 +52,10 @@ class LoginTests {
 
     @Test
     void shouldShowErrorWithInvalidUsername() {
-        driver.get(BASE_URL);
-        driver.findElement(By.id("username")).sendKeys("wronguser");
-        driver.findElement(By.id("password")).sendKeys("password123!");
-        driver.findElement(By.cssSelector("button[type='submit']")).click();
-        WebElement message = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("flash")));        String messageText = message.getText();
+        loginPage.enterUsername("wronguser");
+        loginPage.enterPassword("password123!");
+        loginPage.clickLoginButton();
+        String messageText = loginPage.getFlashMessageText();
         assertTrue(messageText.contains("Your username is invalid!"));
-
-
     }
 }
