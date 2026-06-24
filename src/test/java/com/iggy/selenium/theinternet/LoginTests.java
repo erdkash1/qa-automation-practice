@@ -42,11 +42,10 @@ class LoginTests {
 
     @Test
     void shouldLoginWithValidCredentials() {
-        driver.get(BASE_URL);
-        driver.findElement(By.id("username")).sendKeys("tomsmith");
-        driver.findElement(By.id("password")).sendKeys("SuperSecretPassword!");
-        driver.findElement(By.cssSelector("button[type='submit']")).click();
-        WebElement message = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("flash")));        String messageText = message.getText();
+        loginPage.enterUsername("tomsmith");
+        loginPage.enterPassword("SuperSecretPassword!");
+        loginPage.clickLoginButton();
+        String messageText = loginPage.getFlashMessageText();
         assertTrue(messageText.contains("You logged into a secure area!"));
     }
 
