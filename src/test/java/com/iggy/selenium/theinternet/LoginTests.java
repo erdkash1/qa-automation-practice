@@ -14,8 +14,10 @@ import java.time.Duration;
 import static org.junit.jupiter.api.Assertions.*;
 
 class LoginTests {
+
     private WebDriver driver;
     private WebDriverWait wait;
+    private LoginPage loginPage;
     private static final String BASE_URL = "https://the-internet.herokuapp.com/login";
 
     @BeforeEach
@@ -27,6 +29,8 @@ class LoginTests {
         options.addArguments("--disable-dev-shm-usage");
         driver = new ChromeDriver(options);
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        driver.get(BASE_URL);
+        loginPage = new LoginPage(driver);
     }
 
     @AfterEach
