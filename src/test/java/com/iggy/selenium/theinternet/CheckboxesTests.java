@@ -45,5 +45,10 @@ public class CheckboxesTests {
 
     }
 
+    @Test
+    void shouldToggleCheckboxWhenClicked(){
+        checkboxesPage.clickCheckbox(0);
+        assertTrue(checkboxesPage.isCheckboxChecked(0));
+    }
 
 }
