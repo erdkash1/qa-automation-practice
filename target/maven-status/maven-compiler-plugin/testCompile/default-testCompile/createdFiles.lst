@@ -1,4 +1,6 @@
-com/iggy/selenium/theinternet/CheckboxesPage.class
+com/iggy/selenium/saucedemo/SauceDemoLoginPage.class
 com/iggy/selenium/theinternet/LoginPage.class
 com/iggy/selenium/theinternet/CheckboxesTests.class
 com/iggy/selenium/theinternet/LoginTests.class
+com/iggy/selenium/saucedemo/SauceDemoLoginTests.class
+com/iggy/selenium/theinternet/CheckboxesPage.class
