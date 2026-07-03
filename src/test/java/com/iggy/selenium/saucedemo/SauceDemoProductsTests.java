@@ -10,6 +10,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class SauceDemoProductsTests {
 
@@ -58,5 +59,18 @@ public class SauceDemoProductsTests {
     @Test
     void shouldDisplayFirstProduct(){
         assertEquals("Sauce Labs Backpack", sauceDemoProductsPage.getFirstProductName());
+    }
+
+    @Test
+    void shouldUpdateCartBadgeAfterAddingOneItem() {
+        sauceDemoProductsPage.addBackpackToCart();
+        assertEquals("1", sauceDemoProductsPage.getCartBadgeCount());
+    }
+
+    @Test
+    void shouldUpdateCartBadgeAfterAddingTwoItems() {
+        sauceDemoProductsPage.addBackpackToCart();
+        sauceDemoProductsPage.addBikeLightToCart();
+        assertEquals("2", sauceDemoProductsPage.getCartBadgeCount());
     }
 }
