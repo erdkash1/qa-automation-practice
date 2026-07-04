@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.iggy.selenium.saucedemo.SauceDemoProductsTests" time="11.686" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.iggy.selenium.saucedemo.SauceDemoProductsTests" time="13.55" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="webdriver.chrome.driver" value="/Users/erdenesurenshirmen/.cache/selenium/chromedriver/mac64/149.0.7827.155/chromedriver"/>
@@ -14,7 +14,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/target/surefire/surefirebooter-20260702222725572_3.jar /Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/target/surefire 2026-07-02T22-27-25_478-jvmRun1 surefire-20260702222725572_1tmp surefire_0-20260702222725572_2tmp"/>
+    <property name="sun.java.command" value="/Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/target/surefire/surefirebooter-20260703230148347_3.jar /Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/target/surefire 2026-07-03T23-01-48_228-jvmRun1 surefire-20260703230148347_1tmp surefire_0-20260703230148347_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="SauceDemoProductsTests"/>
@@ -32,7 +32,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/target/surefire/surefirebooter-20260702222725572_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/target/surefire/surefirebooter-20260703230148347_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="21.0.10+8-LTS-217"/>
@@ -60,41 +60,48 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="shouldDisplayFirstProduct" classname="com.iggy.selenium.saucedemo.SauceDemoProductsTests" time="3.145">
+  <testcase name="shouldDisplayFirstProduct" classname="com.iggy.selenium.saucedemo.SauceDemoProductsTests" time="3.714">
     <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
 SLF4J(W): Defaulting to no-operation (NOP) logger implementation
 SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
-Jul 02, 2026 10:27:28 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jul 03, 2026 11:01:51 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 149
-Jul 02, 2026 10:27:28 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jul 03, 2026 11:01:51 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 149.0.7827.201. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="shouldUpdateCartBadgeAfterAddingTwoItems" classname="com.iggy.selenium.saucedemo.SauceDemoProductsTests" time="2.011">
-    <system-err><![CDATA[Jul 02, 2026 10:27:30 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="shouldUpdateCartBadgeAfterAddingTwoItems" classname="com.iggy.selenium.saucedemo.SauceDemoProductsTests" time="2.101">
+    <system-err><![CDATA[Jul 03, 2026 11:01:53 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 149
-Jul 02, 2026 10:27:30 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jul 03, 2026 11:01:53 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 149.0.7827.201. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="shouldUpdateCartBadgeAfterAddingOneItem" classname="com.iggy.selenium.saucedemo.SauceDemoProductsTests" time="2.887">
-    <system-err><![CDATA[Jul 02, 2026 10:27:32 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="shouldSortProductsByPriceLowToHigh" classname="com.iggy.selenium.saucedemo.SauceDemoProductsTests" time="2.143">
+    <system-err><![CDATA[Jul 03, 2026 11:01:55 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 149
-Jul 02, 2026 10:27:32 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jul 03, 2026 11:01:55 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 149.0.7827.201. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="shouldDisplayProductsTitle" classname="com.iggy.selenium.saucedemo.SauceDemoProductsTests" time="1.81">
-    <system-err><![CDATA[Jul 02, 2026 10:27:35 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="shouldUpdateCartBadgeAfterAddingOneItem" classname="com.iggy.selenium.saucedemo.SauceDemoProductsTests" time="1.984">
+    <system-err><![CDATA[Jul 03, 2026 11:01:57 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 149
-Jul 02, 2026 10:27:35 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jul 03, 2026 11:01:57 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 149.0.7827.201. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="shouldDisplaySixProducts" classname="com.iggy.selenium.saucedemo.SauceDemoProductsTests" time="1.8">
-    <system-err><![CDATA[Jul 02, 2026 10:27:36 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="shouldDisplayProductsTitle" classname="com.iggy.selenium.saucedemo.SauceDemoProductsTests" time="1.747">
+    <system-err><![CDATA[Jul 03, 2026 11:01:59 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 149
-Jul 02, 2026 10:27:36 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jul 03, 2026 11:01:59 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 149.0.7827.201. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="shouldDisplaySixProducts" classname="com.iggy.selenium.saucedemo.SauceDemoProductsTests" time="1.828">
+    <system-err><![CDATA[Jul 03, 2026 11:02:01 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 149
+Jul 03, 2026 11:02:01 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 149.0.7827.201. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
