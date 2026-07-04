@@ -66,4 +66,11 @@ public class SauceDemoCartTests {
     void shouldDisplayCorrectItemName(){
         assertEquals("Sauce Labs Backpack", sauceDemoCartPage.getFirstItemName());
     }
+
+    @Test
+    void shouldRemoveItemFromCart() {
+        sauceDemoCartPage.removeFirstItem();
+        assertEquals(0, sauceDemoCartPage.getCartItemCount());
+
+    }
 }
