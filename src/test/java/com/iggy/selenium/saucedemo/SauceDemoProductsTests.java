@@ -73,4 +73,11 @@ public class SauceDemoProductsTests {
         sauceDemoProductsPage.addBikeLightToCart();
         assertEquals("2", sauceDemoProductsPage.getCartBadgeCount());
     }
+
+    @Test
+    void shouldSortProductsByPriceLowToHigh() {
+        sauceDemoProductsPage.sortByPriceLowToHigh();
+        assertEquals("$7.99", sauceDemoProductsPage.getFirstProductPrice());
+
+    }
 }
