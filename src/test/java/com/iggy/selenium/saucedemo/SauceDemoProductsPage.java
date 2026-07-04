@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.Select;
 
 import java.time.Duration;
 
@@ -40,6 +41,15 @@ public class SauceDemoProductsPage {
 
     public String getFirstProductName(){
         return driver.findElements(itemNames).get(0).getText();
+    }
+
+    public void sortByPriceLowToHigh() {
+        Select dropdown = new Select(driver.findElement(sortDropdown));
+        dropdown.selectByValue("lohi");
+    }
+
+    public String getFirstProductPrice() {
+        return driver.findElements(itemPrices).get(0).getText();
     }
 
     public void addBackpackToCart(){
