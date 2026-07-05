@@ -6,6 +6,7 @@ com/iggy/selenium/saucedemo/SauceDemoCartPage.class
 com/iggy/selenium/theinternet/iframe/IFrameTests.class
 com/iggy/selenium/saucedemo/SauceDemoLoginPage.class
 com/iggy/selenium/saucedemo/SauceDemoCheckoutPage.class
+com/iggy/selenium/theinternet/hover/HoverTests.class
 com/iggy/selenium/theinternet/multiple/MultipleWindowsTests.class
 com/iggy/selenium/theinternet/LoginPage.class
 com/iggy/selenium/saucedemo/SauceDemoCartTests.class
@@ -15,6 +16,7 @@ com/iggy/selenium/theinternet/DynamicLoadingTests.class
 com/iggy/selenium/saucedemo/SauceDemoCheckoutTests.class
 com/iggy/selenium/saucedemo/SauceDemoLoginTests.class
 com/iggy/selenium/theinternet/CheckboxesPage.class
+com/iggy/selenium/theinternet/hover/HoverPage.class
 com/iggy/selenium/theinternet/JavaScriptAlertsTests.class
 com/iggy/selenium/theinternet/JavaScriptAlertsPage.class
 com/iggy/selenium/theinternet/DynamicLoadingPage.class
