@@ -1,7 +1,9 @@
 com/iggy/selenium/theinternet/CheckboxesTests.class
 com/iggy/selenium/theinternet/LoginTests.class
 com/iggy/selenium/saucedemo/SauceDemoProductsPage.class
+com/iggy/selenium/theinternet/iframe/IFramePage.class
 com/iggy/selenium/saucedemo/SauceDemoCartPage.class
+com/iggy/selenium/theinternet/iframe/IFrameTests.class
 com/iggy/selenium/saucedemo/SauceDemoLoginPage.class
 com/iggy/selenium/saucedemo/SauceDemoCheckoutPage.class
 com/iggy/selenium/theinternet/multiple/MultipleWindowsTests.class
