@@ -4,9 +4,11 @@ com/iggy/selenium/saucedemo/SauceDemoProductsPage.class
 com/iggy/selenium/saucedemo/SauceDemoCartPage.class
 com/iggy/selenium/saucedemo/SauceDemoLoginPage.class
 com/iggy/selenium/saucedemo/SauceDemoCheckoutPage.class
+com/iggy/selenium/theinternet/multiple/MultipleWindowsTests.class
 com/iggy/selenium/theinternet/LoginPage.class
 com/iggy/selenium/saucedemo/SauceDemoCartTests.class
 com/iggy/selenium/saucedemo/SauceDemoProductsTests.class
+com/iggy/selenium/theinternet/multiple/MultipleWindowsPage.class
 com/iggy/selenium/theinternet/DynamicLoadingTests.class
 com/iggy/selenium/saucedemo/SauceDemoCheckoutTests.class
 com/iggy/selenium/saucedemo/SauceDemoLoginTests.class
