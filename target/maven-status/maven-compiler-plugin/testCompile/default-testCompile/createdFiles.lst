@@ -11,6 +11,7 @@ com/iggy/selenium/theinternet/JavaScriptAlertsTests.class
 com/iggy/selenium/theinternet/JavaScriptAlertsPage.class
 com/iggy/selenium/theinternet/CheckboxesTests.class
 com/iggy/selenium/saucedemo/SauceDemoProductsPage.class
+com/iggy/api/ProductApiTests.class
 com/iggy/selenium/theinternet/draganddrop/DragAndDropPage.class
 com/iggy/selenium/theinternet/iframe/IFrameTests.class
 com/iggy/selenium/saucedemo/SauceDemoLoginParameterizedTests.class
