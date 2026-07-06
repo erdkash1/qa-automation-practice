@@ -15,6 +15,8 @@
 /Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/src/test/java/com/iggy/selenium/theinternet/LoginPage.java
 /Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/src/test/java/com/iggy/selenium/theinternet/LoginTests.java
 /Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/src/test/java/com/iggy/selenium/theinternet/TheInternetTests.java
+/Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/src/test/java/com/iggy/selenium/theinternet/draganddrop/DragAndDropPage.java
+/Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/src/test/java/com/iggy/selenium/theinternet/draganddrop/DragAndDropTests.java
 /Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/src/test/java/com/iggy/selenium/theinternet/hover/HoverPage.java
 /Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/src/test/java/com/iggy/selenium/theinternet/hover/HoverTests.java
 /Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/src/test/java/com/iggy/selenium/theinternet/iframe/IFramePage.java
