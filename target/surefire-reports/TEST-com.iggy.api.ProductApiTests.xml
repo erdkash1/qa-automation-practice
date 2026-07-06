@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.iggy.api.ProductApiTests" time="2.693" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.iggy.api.ProductApiTests" time="3.404" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -13,7 +13,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/target/surefire/surefirebooter-20260705233831788_3.jar /Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/target/surefire 2026-07-05T23-38-31_698-jvmRun1 surefire-20260705233831788_1tmp surefire_0-20260705233831788_2tmp"/>
+    <property name="sun.java.command" value="/Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/target/surefire/surefirebooter-20260705235059020_3.jar /Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/target/surefire 2026-07-05T23-50-58_901-jvmRun1 surefire-20260705235059020_1tmp surefire_0-20260705235059020_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="ProductApiTests"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/target/surefire/surefirebooter-20260705233831788_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/target/surefire/surefirebooter-20260705235059020_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="21.0.10+8-LTS-217"/>
@@ -59,15 +59,15 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="shouldUpdatePost" classname="com.iggy.api.ProductApiTests" time="1.487">
+  <testcase name="shouldUpdatePost" classname="com.iggy.api.ProductApiTests" time="2.022">
     <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
 SLF4J(W): Defaulting to no-operation (NOP) logger implementation
 SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
 ]]></system-err>
   </testcase>
-  <testcase name="shouldReturn100Posts" classname="com.iggy.api.ProductApiTests" time="0.209"/>
-  <testcase name="shouldCreateNewPost" classname="com.iggy.api.ProductApiTests" time="0.194"/>
-  <testcase name="shouldDeletePost" classname="com.iggy.api.ProductApiTests" time="0.204"/>
-  <testcase name="shouldReturn200ForPostsEndpoint" classname="com.iggy.api.ProductApiTests" time="0.138"/>
-  <testcase name="shouldReturnFirstPostWithCorrectTitle" classname="com.iggy.api.ProductApiTests" time="0.168"/>
+  <testcase name="shouldReturn100Posts" classname="com.iggy.api.ProductApiTests" time="0.213"/>
+  <testcase name="shouldCreateNewPost" classname="com.iggy.api.ProductApiTests" time="0.17"/>
+  <testcase name="shouldDeletePost" classname="com.iggy.api.ProductApiTests" time="0.198"/>
+  <testcase name="shouldReturn200ForPostsEndpoint" classname="com.iggy.api.ProductApiTests" time="0.145"/>
+  <testcase name="shouldReturnFirstPostWithCorrectTitle" classname="com.iggy.api.ProductApiTests" time="0.159"/>
 </testsuite>
