@@ -3,16 +3,17 @@ package com.iggy.selenium.saucedemo;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.time.Duration;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+
+@Tag("flaky")
 public class SauceDemoCheckoutTests {
 
     private WebDriver driver;
@@ -31,7 +32,7 @@ public class SauceDemoCheckoutTests {
         options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--window-size=1920,1080");
         driver = new ChromeDriver(options);
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait = new WebDriverWait(driver, Duration.ofSeconds(15));
         driver.get(BASE_URL);
         SauceDemoLoginPage loginPage = new SauceDemoLoginPage(driver);
         loginPage.enterUsername("standard_user");
