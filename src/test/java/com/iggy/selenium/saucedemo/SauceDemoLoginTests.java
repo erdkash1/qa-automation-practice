@@ -1,15 +1,26 @@
 package com.iggy.selenium.saucedemo;
 
+import com.iggy.utils.ScreenshotOnFailureExtension;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestInfo;
+import org.junit.jupiter.api.extension.RegisterExtension;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.time.Duration;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -18,6 +29,11 @@ public class SauceDemoLoginTests {
     private WebDriver driver;
     private WebDriverWait wait;
     private SauceDemoLoginPage sauceDemoLoginPage;
+
+
+    @RegisterExtension
+    ScreenshotOnFailureExtension screenshotExtension =
+            new ScreenshotOnFailureExtension(() -> driver);
     private static final String BASE_URL = "https://www.saucedemo.com";
 
     @BeforeEach
@@ -33,11 +49,27 @@ public class SauceDemoLoginTests {
         sauceDemoLoginPage = new SauceDemoLoginPage(driver);
     }
 
+    private boolean testFailed = false;
+
     @AfterEach
-    void tearDown() {
-        if (driver != null) {
-            driver.quit();
+    void tearDown(TestInfo testInfo) {
+        if (testFailed && driver != null) {
+            try {
+                String testName = testInfo.getDisplayName()
+                        .replaceAll("[^a-zA-Z0-9_-]", "_");
+                String timestamp = LocalDateTime.now()
+                        .format(DateTimeFormatter.ofPattern("yyyy-MM-dd_HH-mm-ss"));
+                File screenshot = ((TakesScreenshot) driver)
+                        .getScreenshotAs(OutputType.FILE);
+                Files.createDirectories(Paths.get("screenshots"));
+                Files.copy(screenshot.toPath(),
+                        Paths.get("screenshots/" + testName + "_" + timestamp + ".png"));
+                System.out.println("✅ Screenshot saved!");
+            } catch (IOException e) {
+                System.err.println("Screenshot failed: " + e.getMessage());
+            }
         }
+        if (driver != null) driver.quit();
     }
 
     @Test
