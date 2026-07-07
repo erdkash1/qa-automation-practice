@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.iggy.selenium.saucedemo.SauceDemoLoginTests
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.146 s -- in com.iggy.selenium.saucedemo.SauceDemoLoginTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.443 s -- in com.iggy.selenium.saucedemo.SauceDemoLoginTests
