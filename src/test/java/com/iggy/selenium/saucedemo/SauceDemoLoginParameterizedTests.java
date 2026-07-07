@@ -23,6 +23,7 @@ public class SauceDemoLoginParameterizedTests {
         options.addArguments("--headless");
         options.addArguments("--no-sandbox");
         options.addArguments("--disable-dev-shm-usage");
+        options.addArguments("--window-size=1920,1080");
         driver = new ChromeDriver(options);
         driver.get(BASE_URL);
         loginPage = new SauceDemoLoginPage(driver);
