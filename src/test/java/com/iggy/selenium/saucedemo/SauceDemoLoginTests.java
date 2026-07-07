@@ -2,6 +2,7 @@ package com.iggy.selenium.saucedemo;
 
 import com.iggy.utils.ScreenshotOnFailureExtension;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.qameta.allure.*;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -24,6 +25,8 @@ import java.time.format.DateTimeFormatter;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+@Epic("SauceDemo E-Commerce")
+@Feature("Login")
 public class SauceDemoLoginTests {
 
     private WebDriver driver;
@@ -43,6 +46,7 @@ public class SauceDemoLoginTests {
         options.addArguments("--headless");
         options.addArguments("--no-sandbox");
         options.addArguments("--disable-dev-shm-usage");
+        options.addArguments("--window-size=1920,1080");
         driver = new ChromeDriver(options);
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         driver.get(BASE_URL);
@@ -73,6 +77,8 @@ public class SauceDemoLoginTests {
     }
 
     @Test
+    @Story("Valid Login")
+    @Severity(SeverityLevel.CRITICAL)
     void shouldLoginWithValidCredentials(){
         sauceDemoLoginPage.enterUsername("standard_user");
         sauceDemoLoginPage.enterPassword("secret_sauce");
@@ -82,6 +88,8 @@ public class SauceDemoLoginTests {
 
 
     @Test
+    @Story("Invalid Login")
+    @Severity(SeverityLevel.CRITICAL)
     void shouldShowErrorWithInvalidCredentials(){
         sauceDemoLoginPage.enterUsername("wrong_user");
         sauceDemoLoginPage.enterPassword("wrong_pass");
