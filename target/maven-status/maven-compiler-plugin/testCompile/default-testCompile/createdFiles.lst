@@ -6,6 +6,7 @@ com/iggy/selenium/saucedemo/SauceDemoLoginPage.class
 com/iggy/selenium/theinternet/hover/HoverTests.class
 com/iggy/selenium/saucedemo/SauceDemoProductsTests.class
 com/iggy/selenium/theinternet/DynamicLoadingTests.class
+com/iggy/utils/ScreenshotOnFailureExtension.class
 com/iggy/selenium/theinternet/CheckboxesPage.class
 com/iggy/selenium/theinternet/JavaScriptAlertsTests.class
 com/iggy/selenium/theinternet/JavaScriptAlertsPage.class
