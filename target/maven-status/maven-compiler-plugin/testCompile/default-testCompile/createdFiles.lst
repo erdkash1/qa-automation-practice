@@ -2,6 +2,7 @@ com/iggy/selenium/theinternet/LoginTests.class
 com/iggy/selenium/theinternet/iframe/IFramePage.class
 com/iggy/selenium/saucedemo/SauceDemoCartPage.class
 com/iggy/selenium/theinternet/draganddrop/DragAndDropTests.class
+com/iggy/selenium/theinternet/TheInternetTests.class
 com/iggy/selenium/saucedemo/SauceDemoLoginPage.class
 com/iggy/selenium/theinternet/hover/HoverTests.class
 com/iggy/selenium/saucedemo/SauceDemoProductsTests.class

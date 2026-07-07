@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.iggy.selenium.theinternet.LoginTests
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.028 s -- in com.iggy.selenium.theinternet.LoginTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.109 s -- in com.iggy.selenium.theinternet.LoginTests
