@@ -39,4 +39,6 @@ public class SauceDemoLoginPage {
     public String getErrorMessage(){
         return wait.until(ExpectedConditions.presenceOfElementLocated(errorMessage)).getText();
     }
+
+
 }
