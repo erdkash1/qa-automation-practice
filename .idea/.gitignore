@@ -8,3 +8,4 @@
 /dataSources.local.xml
 # Editor-based HTTP Client requests
 /httpRequests/
+echo "screenshots/" >> ~/IdeaProjects/qa-automation-practice/.gitignore
