@@ -1,10 +1,9 @@
 package com.iggy.selenium.saucedemo;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.*;
 
 import java.time.Duration;
 
@@ -62,6 +61,15 @@ public class SauceDemoProductsPage {
 
     public String getCartBadgeCount(){
         return wait.until(ExpectedConditions.presenceOfElementLocated(cartBadge)).getText();
+    }
+
+    public String getPageTitleWithFluentWait() {
+        Wait<WebDriver> fluentWait = new FluentWait<>(driver)
+                .withTimeout(Duration.ofSeconds(10))
+                .pollingEvery(Duration.ofMillis(500))
+                .ignoring(NoSuchElementException.class);
+
+        return fluentWait.until(d -> d.findElement(pageTitle).getText());
     }
 
 
