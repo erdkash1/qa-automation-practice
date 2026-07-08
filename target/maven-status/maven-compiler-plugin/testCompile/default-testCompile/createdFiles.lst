@@ -23,6 +23,7 @@ com/iggy/selenium/theinternet/multiple/MultipleWindowsTests.class
 com/iggy/selenium/theinternet/LoginPage.class
 com/iggy/selenium/saucedemo/SauceDemoCartTests.class
 com/iggy/selenium/theinternet/multiple/MultipleWindowsPage.class
+com/iggy/selenium/testng/SauceDemoLoginTestNG.class
 com/iggy/selenium/saucedemo/SauceDemoCheckoutTests.class
 com/iggy/selenium/saucedemo/SauceDemoLoginTests.class
 com/iggy/selenium/theinternet/hover/HoverPage.class
