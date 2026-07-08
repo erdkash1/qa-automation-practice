@@ -76,6 +76,13 @@
             <version>3.25.3</version>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.9.0</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
@@ -92,6 +99,10 @@
                         <allure.results.directory>${project.build.directory}/allure-results</allure.results.directory>
                     </systemPropertyVariables>
                     <excludedGroups>flaky</excludedGroups>
+                    <includes>
+                        <include>**/*Tests.java</include>
+                        <include>**/*TestNG.java</include>
+                    </includes>
                 </configuration>
             </plugin>
 
