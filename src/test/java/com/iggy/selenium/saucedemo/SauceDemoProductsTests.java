@@ -96,4 +96,9 @@ public class SauceDemoProductsTests {
 
         soft.assertAll();
     }
+
+    @Test
+    void shouldGetPageTitleWithFluentWait() {
+        assertEquals("Products", sauceDemoProductsPage.getPageTitleWithFluentWait());
+    }
 }
