@@ -25,8 +25,10 @@ public class IFramePage {
     public void switchToMainContent(){
         driver.switchTo().defaultContent();
     }
+
+
     public String getEditorText() {
-        wait.until(ExpectedConditions.presenceOfElementLocated(editorBody));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(editorBody));
         return driver.findElement(editorBody).getText();
     }
     public void clearEditorText() {
