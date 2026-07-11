@@ -5,6 +5,7 @@ import com.microsoft.playwright.assertions.PlaywrightAssertions;
 import org.junit.jupiter.api.*;
 
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class SauceDemoLoginPlaywrightTests {
@@ -43,5 +44,21 @@ public class SauceDemoLoginPlaywrightTests {
         page.fill("[data-test='password']", "secret_sauce");
         page.click("[data-test='login-button']");
         assertTrue(page.url().contains("inventory"));
+    }
+
+    @Test
+    void shouldShowErrorWithInvalidCredentials(){
+        page.fill("[data-test='username']", "wrong_user");
+        page.fill("[data-test='password']","wrong_pass");
+        page.click("[data-test='login-button']");
+        assertTrue(page.locator("[data-test='error']").textContent().contains("Epic sadface"));
+    }
+
+    @Test
+    void shouldDisplayProductsPageTitle(){
+        page.fill("[data-test='username']", "standard_user");
+        page.fill("[data-test='password']", "secret_sauce");
+        page.click("[data-test='login-button']");
+        assertTrue(page.locator("[data-test='title']").textContent().contains("Products"));
     }
 }
