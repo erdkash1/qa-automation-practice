@@ -11,9 +11,11 @@ com/iggy/utils/ScreenshotOnFailureExtension.class
 com/iggy/selenium/theinternet/CheckboxesPage.class
 com/iggy/selenium/theinternet/JavaScriptAlertsTests.class
 com/iggy/selenium/theinternet/JavaScriptAlertsPage.class
+com/iggy/playwright/SauceDemoLoginPagePlaywrightTests.class
 com/iggy/selenium/theinternet/CheckboxesTests.class
 com/iggy/selenium/saucedemo/SauceDemoProductsPage.class
 com/iggy/playwright/SauceDemoLoginPlaywrightTests.class
+com/iggy/playwright/SauceDemoLoginPagePlaywright.class
 com/iggy/api/ProductApiTests2.class
 com/iggy/api/ProductApiTests.class
 com/iggy/selenium/theinternet/draganddrop/DragAndDropPage.class
