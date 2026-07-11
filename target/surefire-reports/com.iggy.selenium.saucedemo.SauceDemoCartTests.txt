@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.iggy.selenium.saucedemo.SauceDemoCartTests
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.568 s -- in com.iggy.selenium.saucedemo.SauceDemoCartTests
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.67 s -- in com.iggy.selenium.saucedemo.SauceDemoCartTests
