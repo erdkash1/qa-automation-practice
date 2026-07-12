@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.iggy.cucumber.CucumberRunner" time="5.891" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.iggy.cucumber.CucumberRunner" time="10.723" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="webdriver.chrome.driver" value="/Users/erdenesurenshirmen/.cache/selenium/chromedriver/mac64/150.0.7871.115/chromedriver"/>
@@ -14,7 +14,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/target/surefire/surefirebooter-20260711230706649_3.jar /Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/target/surefire 2026-07-11T23-07-06_558-jvmRun1 surefire-20260711230706649_1tmp surefire_0-20260711230706649_2tmp"/>
+    <property name="sun.java.command" value="/Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/target/surefire/surefirebooter-20260712130735485_3.jar /Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/target/surefire 2026-07-12T13-07-35_400-jvmRun1 surefire-20260712130735485_1tmp surefire_0-20260712130735485_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="CucumberRunner"/>
@@ -33,7 +33,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/target/surefire/surefirebooter-20260711230706649_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/target/surefire/surefirebooter-20260712130735485_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="21.0.10+8-LTS-217"/>
@@ -61,7 +61,7 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="Successful login with valid credentials" classname="CucumberRunner" time="3.121">
+  <testcase name="Successful login with valid credentials" classname="CucumberRunner" time="2.814">
     <system-out><![CDATA[
 Scenario: Successful login with valid credentials   &amp#27;[90m# features/login.feature:3&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on the SauceDemo login page&amp#27;[0m            &amp#27;[90m# com.iggy.cucumber.steps.LoginSteps.iAmOnTheSauceDemoLoginPage()&amp#27;[0m
@@ -73,13 +73,13 @@ Scenario: Successful login with valid credentials   &amp#27;[90m# features/login
     <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
 SLF4J(W): Defaulting to no-operation (NOP) logger implementation
 SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
-Jul 11, 2026 11:07:12 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jul 12, 2026 1:07:40 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 150
-Jul 11, 2026 11:07:12 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jul 12, 2026 1:07:40 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 150.0.7871.49. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="Failed login with invalid credentials" classname="CucumberRunner" time="1.701">
+  <testcase name="Failed login with invalid credentials" classname="CucumberRunner" time="1.764">
     <system-out><![CDATA[
 Scenario: Failed login with invalid credentials                &amp#27;[90m# features/login.feature:10&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on the SauceDemo login page&amp#27;[0m                       &amp#27;[90m# com.iggy.cucumber.steps.LoginSteps.iAmOnTheSauceDemoLoginPage()&amp#27;[0m
@@ -88,9 +88,54 @@ Scenario: Failed login with invalid credentials                &amp#27;[90m# fea
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI click the login button&amp#27;[0m                                 &amp#27;[90m# com.iggy.cucumber.steps.LoginSteps.iClickTheLoginButton()&amp#27;[0m
   &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI should see an error message containing &amp#27;[0m&amp#27;[32m&amp#27;[1m"Epic sadface"&amp#27;[0m &amp#27;[90m# com.iggy.cucumber.steps.LoginSteps.iShouldSeeAnErrorMessageContaining(java.lang.String)&amp#27;[0m
 ]]></system-out>
-    <system-err><![CDATA[Jul 11, 2026 11:07:14 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jul 12, 2026 1:07:42 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 150
-Jul 11, 2026 11:07:14 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jul 12, 2026 1:07:42 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 150.0.7871.49. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Example #1.1" classname="CucumberRunner" time="1.73">
+    <system-out><![CDATA[
+Scenario Outline: Login with multiple user types &amp#27;[90m# features/login.feature:26&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on the SauceDemo login page&amp#27;[0m         &amp#27;[90m# com.iggy.cucumber.steps.LoginSteps.iAmOnTheSauceDemoLoginPage()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI enter username &amp#27;[0m&amp#27;[32m&amp#27;[1m"standard_user"&amp#27;[0m          &amp#27;[90m# com.iggy.cucumber.steps.LoginSteps.iEnterUsername(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI enter password &amp#27;[0m&amp#27;[32m&amp#27;[1m"secret_sauce"&amp#27;[0m            &amp#27;[90m# com.iggy.cucumber.steps.LoginSteps.iEnterPassword(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI click the login button&amp#27;[0m                   &amp#27;[90m# com.iggy.cucumber.steps.LoginSteps.iClickTheLoginButton()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI should see &amp#27;[0m&amp#27;[32m&amp#27;[1m"inventory"&amp#27;[0m                  &amp#27;[90m# com.iggy.cucumber.steps.LoginSteps.iShouldSee(java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Jul 12, 2026 1:07:43 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 150
+Jul 12, 2026 1:07:43 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 150.0.7871.49. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Example #1.2" classname="CucumberRunner" time="1.731">
+    <system-out><![CDATA[
+Scenario Outline: Login with multiple user types &amp#27;[90m# features/login.feature:27&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on the SauceDemo login page&amp#27;[0m         &amp#27;[90m# com.iggy.cucumber.steps.LoginSteps.iAmOnTheSauceDemoLoginPage()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI enter username &amp#27;[0m&amp#27;[32m&amp#27;[1m"locked_out_user"&amp#27;[0m        &amp#27;[90m# com.iggy.cucumber.steps.LoginSteps.iEnterUsername(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI enter password &amp#27;[0m&amp#27;[32m&amp#27;[1m"secret_sauce"&amp#27;[0m            &amp#27;[90m# com.iggy.cucumber.steps.LoginSteps.iEnterPassword(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI click the login button&amp#27;[0m                   &amp#27;[90m# com.iggy.cucumber.steps.LoginSteps.iClickTheLoginButton()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI should see &amp#27;[0m&amp#27;[32m&amp#27;[1m"Epic sadface"&amp#27;[0m               &amp#27;[90m# com.iggy.cucumber.steps.LoginSteps.iShouldSee(java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Jul 12, 2026 1:07:45 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 150
+Jul 12, 2026 1:07:45 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 150.0.7871.49. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Example #1.3" classname="CucumberRunner" time="1.727">
+    <system-out><![CDATA[
+Scenario Outline: Login with multiple user types &amp#27;[90m# features/login.feature:28&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on the SauceDemo login page&amp#27;[0m         &amp#27;[90m# com.iggy.cucumber.steps.LoginSteps.iAmOnTheSauceDemoLoginPage()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI enter username &amp#27;[0m&amp#27;[32m&amp#27;[1m"wrong_user"&amp#27;[0m             &amp#27;[90m# com.iggy.cucumber.steps.LoginSteps.iEnterUsername(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI enter password &amp#27;[0m&amp#27;[32m&amp#27;[1m"wrong_pass"&amp#27;[0m              &amp#27;[90m# com.iggy.cucumber.steps.LoginSteps.iEnterPassword(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI click the login button&amp#27;[0m                   &amp#27;[90m# com.iggy.cucumber.steps.LoginSteps.iClickTheLoginButton()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI should see &amp#27;[0m&amp#27;[32m&amp#27;[1m"Epic sadface"&amp#27;[0m               &amp#27;[90m# com.iggy.cucumber.steps.LoginSteps.iShouldSee(java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Jul 12, 2026 1:07:47 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 150
+Jul 12, 2026 1:07:47 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 150.0.7871.49. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
