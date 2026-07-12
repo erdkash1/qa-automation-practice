@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.iggy.cucumber.CucumberRunner
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.891 s -- in com.iggy.cucumber.CucumberRunner
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.72 s -- in com.iggy.cucumber.CucumberRunner
