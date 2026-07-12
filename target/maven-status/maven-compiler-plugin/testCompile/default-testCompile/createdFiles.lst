@@ -1,4 +1,6 @@
 com/iggy/selenium/theinternet/fileupload/FileUploadTests.class
+com/iggy/cucumber/steps/LoginSteps.class
+com/iggy/cucumber/CucumberRunner.class
 com/iggy/selenium/theinternet/LoginTests.class
 com/iggy/selenium/theinternet/iframe/IFramePage.class
 com/iggy/selenium/saucedemo/SauceDemoCartPage.class
