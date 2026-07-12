@@ -16,6 +16,7 @@ com/iggy/utils/ScreenshotOnFailureExtension.class
 com/iggy/selenium/theinternet/CheckboxesPage.class
 com/iggy/selenium/theinternet/JavaScriptAlertsTests.class
 com/iggy/selenium/theinternet/JavaScriptAlertsPage.class
+com/iggy/cucumber/steps/ProductsSteps.class
 com/iggy/playwright/SauceDemoLoginPagePlaywrightTests.class
 com/iggy/selenium/theinternet/CheckboxesTests.class
 com/iggy/selenium/saucedemo/SauceDemoProductsPage.class
