@@ -62,4 +62,13 @@ public class LoginSteps {
     public void iShouldSeeAnErrorMessageContaining(String expectedError) {
         assertTrue(loginPage.getErrorMessage().contains(expectedError));
     }
+
+    @Then("I should see {string}")
+    public void iShouldSee(String expected) {
+        if (driver.getCurrentUrl().contains("inventory")) {
+            assertTrue(driver.getCurrentUrl().contains(expected));
+        } else {
+            assertTrue(loginPage.getErrorMessage().contains(expected));
+        }
+    }
 }
