@@ -3,10 +3,12 @@ com/iggy/selenium/theinternet/iframe/IFramePage.class
 com/iggy/selenium/saucedemo/SauceDemoCartPage.class
 com/iggy/selenium/theinternet/draganddrop/DragAndDropTests.class
 com/iggy/selenium/theinternet/TheInternetTests.class
+com/iggy/selenium/pagefactory/SauceDemoLoginPageFactoryTests.class
 com/iggy/selenium/saucedemo/SauceDemoLoginPage.class
 com/iggy/selenium/theinternet/hover/HoverTests.class
 com/iggy/selenium/saucedemo/SauceDemoProductsTests.class
 com/iggy/selenium/theinternet/DynamicLoadingTests.class
+com/iggy/selenium/pagefactory/SauceDemoLoginPageFactory.class
 com/iggy/utils/ScreenshotOnFailureExtension.class
 com/iggy/selenium/theinternet/CheckboxesPage.class
 com/iggy/selenium/theinternet/JavaScriptAlertsTests.class
