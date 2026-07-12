@@ -1,3 +1,4 @@
+com/iggy/selenium/theinternet/fileupload/FileUploadTests.class
 com/iggy/selenium/theinternet/LoginTests.class
 com/iggy/selenium/theinternet/iframe/IFramePage.class
 com/iggy/selenium/saucedemo/SauceDemoCartPage.class
@@ -17,6 +18,7 @@ com/iggy/playwright/SauceDemoLoginPagePlaywrightTests.class
 com/iggy/selenium/theinternet/CheckboxesTests.class
 com/iggy/selenium/saucedemo/SauceDemoProductsPage.class
 com/iggy/playwright/SauceDemoLoginPlaywrightTests.class
+com/iggy/selenium/theinternet/FileUploadPage.class
 com/iggy/playwright/SauceDemoLoginPagePlaywright.class
 com/iggy/api/ProductApiTests2.class
 com/iggy/api/ProductApiTests.class
