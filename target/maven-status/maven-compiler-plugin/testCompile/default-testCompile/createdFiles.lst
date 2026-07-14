@@ -25,12 +25,14 @@ com/iggy/selenium/theinternet/FileUploadPage.class
 com/iggy/playwright/SauceDemoLoginPagePlaywright.class
 com/iggy/api/ProductApiTests2.class
 com/iggy/api/ProductApiTests.class
+com/iggy/cucumber/steps/CartSteps.class
 com/iggy/selenium/theinternet/draganddrop/DragAndDropPage.class
 com/iggy/selenium/theinternet/iframe/IFrameTests.class
 com/iggy/selenium/saucedemo/SauceDemoLoginParameterizedTests.class
 com/iggy/selenium/saucedemo/SauceDemoCheckoutPage.class
 com/iggy/selenium/theinternet/multiple/MultipleWindowsTests.class
 com/iggy/selenium/theinternet/LoginPage.class
+com/iggy/cucumber/steps/SharedContext.class
 com/iggy/selenium/saucedemo/SauceDemoCartTests.class
 com/iggy/selenium/theinternet/multiple/MultipleWindowsPage.class
 com/iggy/selenium/testng/SauceDemoLoginTestNG.class
