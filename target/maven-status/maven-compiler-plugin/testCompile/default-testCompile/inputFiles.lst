@@ -1,8 +1,10 @@
 /Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/src/test/java/com/iggy/api/ProductApiTests.java
 /Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/src/test/java/com/iggy/api/ProductApiTests2.java
 /Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/src/test/java/com/iggy/cucumber/CucumberRunner.java
+/Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/src/test/java/com/iggy/cucumber/steps/CartSteps.java
 /Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/src/test/java/com/iggy/cucumber/steps/LoginSteps.java
 /Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/src/test/java/com/iggy/cucumber/steps/ProductsSteps.java
+/Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/src/test/java/com/iggy/cucumber/steps/SharedContext.java
 /Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/src/test/java/com/iggy/playwright/SauceDemoLoginPagePlaywright.java
 /Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/src/test/java/com/iggy/playwright/SauceDemoLoginPagePlaywrightTests.java
 /Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/src/test/java/com/iggy/playwright/SauceDemoLoginPlaywrightTests.java
