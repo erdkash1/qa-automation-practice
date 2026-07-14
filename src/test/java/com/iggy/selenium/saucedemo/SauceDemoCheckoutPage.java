@@ -13,7 +13,7 @@ public class SauceDemoCheckoutPage {
 
     public SauceDemoCheckoutPage(WebDriver driver){
         this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(20));
     }
 
     private By checkoutButton = By.cssSelector("[data-test='checkout']");
@@ -24,35 +24,33 @@ public class SauceDemoCheckoutPage {
     private By finishButton = By.cssSelector("[data-test='finish']");
     private By confirmationHeader = By.cssSelector("[data-test='complete-header']");
 
-
     public void clickCheckout() {
         wait.until(ExpectedConditions.elementToBeClickable(checkoutButton)).click();
         wait.until(ExpectedConditions.elementToBeClickable(firstNameField));
     }
 
-    public void enterFirstName(String name){
-        wait.until(ExpectedConditions.presenceOfElementLocated(firstNameField)).sendKeys(name);
+    public void enterFirstName(String name) {
+        wait.until(ExpectedConditions.elementToBeClickable(firstNameField)).sendKeys(name);
     }
 
     public void enterLastName(String name) {
-        wait.until(ExpectedConditions.presenceOfElementLocated(lastNameField)).sendKeys(name);
+        wait.until(ExpectedConditions.elementToBeClickable(lastNameField)).sendKeys(name);
     }
 
     public void enterPostalCode(String code) {
-        wait.until(ExpectedConditions.presenceOfElementLocated(postalCodeField)).sendKeys(code);
+        wait.until(ExpectedConditions.elementToBeClickable(postalCodeField)).sendKeys(code);
     }
 
     public void clickContinue() {
         wait.until(ExpectedConditions.elementToBeClickable(continueButton)).click();
-        wait.until(ExpectedConditions.urlContains("checkout-step-two"));
+        wait.until(ExpectedConditions.presenceOfElementLocated(finishButton));
     }
 
     public void clickFinish() {
         wait.until(ExpectedConditions.presenceOfElementLocated(finishButton)).click();
     }
 
-    public String getConfirmationMessage(){
+    public String getConfirmationMessage() {
         return wait.until(ExpectedConditions.presenceOfElementLocated(confirmationHeader)).getText();
     }
-
 }
