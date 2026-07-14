@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.iggy.cucumber.CucumberRunner" time="50.813" tests="12" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.iggy.cucumber.CucumberRunner" time="38.61" tests="13" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="webdriver.chrome.driver" value="/Users/erdenesurenshirmen/.cache/selenium/chromedriver/mac64/150.0.7871.115/chromedriver"/>
@@ -14,7 +14,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/target/surefire/surefirebooter-20260713221253201_3.jar /Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/target/surefire 2026-07-13T22-12-53_109-jvmRun1 surefire-20260713221253201_1tmp surefire_0-20260713221253201_2tmp"/>
+    <property name="sun.java.command" value="/Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/target/surefire/surefirebooter-20260713223329101_3.jar /Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/target/surefire 2026-07-13T22-33-29_024-jvmRun1 surefire-20260713223329101_1tmp surefire_0-20260713223329101_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="CucumberRunner"/>
@@ -33,7 +33,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/target/surefire/surefirebooter-20260713221253201_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/target/surefire/surefirebooter-20260713223329101_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="21.0.10+8-LTS-217"/>
@@ -61,7 +61,7 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="Add item to cart" classname="CucumberRunner" time="17.773">
+  <testcase name="Add item to cart" classname="CucumberRunner" time="3.999">
     <system-out><![CDATA[
 Scenario: Add item to cart                                             &amp#27;[90m# features/cart.feature:6&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am logged in as &amp#27;[0m&amp#27;[32m&amp#27;[1m"standard_user"&amp#27;[0m&amp#27;[32m with password &amp#27;[0m&amp#27;[32m&amp#27;[1m"secret_sauce"&amp#27;[0m &amp#27;[90m# com.iggy.cucumber.steps.ProductsSteps.iAmLoggedInAs(java.lang.String,java.lang.String)&amp#27;[0m
@@ -71,17 +71,17 @@ Scenario: Add item to cart                                             &amp#27;[
     <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
 SLF4J(W): Defaulting to no-operation (NOP) logger implementation
 SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
-Jul 13, 2026 10:13:10 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jul 13, 2026 10:33:33 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 150
-Jul 13, 2026 10:13:10 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jul 13, 2026 10:33:33 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 150.0.7871.115. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-Jul 13, 2026 10:13:12 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jul 13, 2026 10:33:34 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 150
-Jul 13, 2026 10:13:12 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jul 13, 2026 10:33:34 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 150.0.7871.115. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="Add two items to cart" classname="CucumberRunner" time="2.828">
+  <testcase name="Add two items to cart" classname="CucumberRunner" time="2.884">
     <system-out><![CDATA[
 Scenario: Add two items to cart                                        &amp#27;[90m# features/cart.feature:10&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am logged in as &amp#27;[0m&amp#27;[32m&amp#27;[1m"standard_user"&amp#27;[0m&amp#27;[32m with password &amp#27;[0m&amp#27;[32m&amp#27;[1m"secret_sauce"&amp#27;[0m &amp#27;[90m# com.iggy.cucumber.steps.ProductsSteps.iAmLoggedInAs(java.lang.String,java.lang.String)&amp#27;[0m
@@ -89,17 +89,17 @@ Scenario: Add two items to cart                                        &amp#27;[
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI add &amp#27;[0m&amp#27;[32m&amp#27;[1m"Sauce Labs Bike Light"&amp#27;[0m&amp#27;[32m to cart&amp#27;[0m                            &amp#27;[90m# com.iggy.cucumber.steps.CartSteps.iAddToCart(java.lang.String)&amp#27;[0m
   &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe cart badge should show &amp#27;[0m&amp#27;[32m&amp#27;[1m"2"&amp#27;[0m                                  &amp#27;[90m# com.iggy.cucumber.steps.CartSteps.theCartBadgeShouldShow(java.lang.String)&amp#27;[0m
 ]]></system-out>
-    <system-err><![CDATA[Jul 13, 2026 10:13:15 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jul 13, 2026 10:33:36 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 150
-Jul 13, 2026 10:13:15 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jul 13, 2026 10:33:36 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 150.0.7871.115. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-Jul 13, 2026 10:13:16 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jul 13, 2026 10:33:37 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 150
-Jul 13, 2026 10:13:16 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jul 13, 2026 10:33:37 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 150.0.7871.115. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="Remove item from cart" classname="CucumberRunner" time="2.887">
+  <testcase name="Remove item from cart" classname="CucumberRunner" time="2.959">
     <system-out><![CDATA[
 Scenario: Remove item from cart                                        &amp#27;[90m# features/cart.feature:15&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am logged in as &amp#27;[0m&amp#27;[32m&amp#27;[1m"standard_user"&amp#27;[0m&amp#27;[32m with password &amp#27;[0m&amp#27;[32m&amp#27;[1m"secret_sauce"&amp#27;[0m &amp#27;[90m# com.iggy.cucumber.steps.ProductsSteps.iAmLoggedInAs(java.lang.String,java.lang.String)&amp#27;[0m
@@ -108,17 +108,42 @@ Scenario: Remove item from cart                                        &amp#27;[
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI remove the first item&amp#27;[0m                                          &amp#27;[90m# com.iggy.cucumber.steps.CartSteps.iRemoveTheFirstItem()&amp#27;[0m
   &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe cart should be empty&amp#27;[0m                                        &amp#27;[90m# com.iggy.cucumber.steps.CartSteps.theCartShouldBeEmpty()&amp#27;[0m
 ]]></system-out>
-    <system-err><![CDATA[Jul 13, 2026 10:13:18 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jul 13, 2026 10:33:39 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 150
-Jul 13, 2026 10:13:18 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jul 13, 2026 10:33:39 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 150.0.7871.115. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-Jul 13, 2026 10:13:18 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jul 13, 2026 10:33:40 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 150
-Jul 13, 2026 10:13:18 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jul 13, 2026 10:33:40 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 150.0.7871.115. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="Successful login with valid credentials" classname="CucumberRunner" time="2.686">
+  <testcase name="Complete full checkout flow" classname="CucumberRunner" time="3.355">
+    <system-out><![CDATA[
+@checkout
+Scenario: Complete full checkout flow                                    &amp#27;[90m# features/checkout.feature:7&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am logged in as &amp#27;[0m&amp#27;[32m&amp#27;[1m"standard_user"&amp#27;[0m&amp#27;[32m with password &amp#27;[0m&amp#27;[32m&amp#27;[1m"secret_sauce"&amp#27;[0m   &amp#27;[90m# com.iggy.cucumber.steps.ProductsSteps.iAmLoggedInAs(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI add &amp#27;[0m&amp#27;[32m&amp#27;[1m"Sauce Labs Backpack"&amp#27;[0m&amp#27;[32m to cart&amp#27;[0m                               &amp#27;[90m# com.iggy.cucumber.steps.CartSteps.iAddToCart(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI go to the cart page&amp#27;[0m                                              &amp#27;[90m# com.iggy.cucumber.steps.CartSteps.iGoToTheCartPage()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI click checkout&amp#27;[0m                                                   &amp#27;[90m# com.iggy.cucumber.steps.CheckoutSteps.iClickCheckout()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI enter first name &amp#27;[0m&amp#27;[32m&amp#27;[1m"Iggy"&amp#27;[0m                                          &amp#27;[90m# com.iggy.cucumber.steps.CheckoutSteps.iEnterFirstName(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI enter last name &amp#27;[0m&amp#27;[32m&amp#27;[1m"Shirmen"&amp#27;[0m                                        &amp#27;[90m# com.iggy.cucumber.steps.CheckoutSteps.iEnterLastName(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI enter postal code &amp#27;[0m&amp#27;[32m&amp#27;[1m"65806"&amp#27;[0m                                        &amp#27;[90m# com.iggy.cucumber.steps.CheckoutSteps.iEnterPostalCode(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI click continue&amp#27;[0m                                                   &amp#27;[90m# com.iggy.cucumber.steps.CheckoutSteps.iClickContinue()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI click finish&amp#27;[0m                                                     &amp#27;[90m# com.iggy.cucumber.steps.CheckoutSteps.iClickFinish()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI should see the confirmation message &amp#27;[0m&amp#27;[32m&amp#27;[1m"Thank you for your order!"&amp#27;[0m &amp#27;[90m# com.iggy.cucumber.steps.CheckoutSteps.iShouldSeeTheConfirmationMessage(java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Jul 13, 2026 10:33:42 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 150
+Jul 13, 2026 10:33:42 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 150.0.7871.115. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Jul 13, 2026 10:33:43 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 150
+Jul 13, 2026 10:33:43 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 150.0.7871.115. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Successful login with valid credentials" classname="CucumberRunner" time="2.738">
     <system-out><![CDATA[
 Scenario: Successful login with valid credentials   &amp#27;[90m# features/login.feature:3&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on the SauceDemo login page&amp#27;[0m            &amp#27;[90m# com.iggy.cucumber.steps.LoginSteps.iAmOnTheSauceDemoLoginPage()&amp#27;[0m
@@ -127,17 +152,17 @@ Scenario: Successful login with valid credentials   &amp#27;[90m# features/login
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI click the login button&amp#27;[0m                      &amp#27;[90m# com.iggy.cucumber.steps.LoginSteps.iClickTheLoginButton()&amp#27;[0m
   &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI should be redirected to the inventory page&amp#27;[0m &amp#27;[90m# com.iggy.cucumber.steps.LoginSteps.iShouldBeRedirectedToTheInventoryPage()&amp#27;[0m
 ]]></system-out>
-    <system-err><![CDATA[Jul 13, 2026 10:13:20 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jul 13, 2026 10:33:45 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 150
-Jul 13, 2026 10:13:20 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jul 13, 2026 10:33:45 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 150.0.7871.115. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-Jul 13, 2026 10:13:21 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jul 13, 2026 10:33:46 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 150
-Jul 13, 2026 10:13:21 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jul 13, 2026 10:33:46 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 150.0.7871.115. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="Failed login with invalid credentials" classname="CucumberRunner" time="2.839">
+  <testcase name="Failed login with invalid credentials" classname="CucumberRunner" time="2.7">
     <system-out><![CDATA[
 Scenario: Failed login with invalid credentials                &amp#27;[90m# features/login.feature:10&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on the SauceDemo login page&amp#27;[0m                       &amp#27;[90m# com.iggy.cucumber.steps.LoginSteps.iAmOnTheSauceDemoLoginPage()&amp#27;[0m
@@ -146,17 +171,17 @@ Scenario: Failed login with invalid credentials                &amp#27;[90m# fea
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI click the login button&amp#27;[0m                                 &amp#27;[90m# com.iggy.cucumber.steps.LoginSteps.iClickTheLoginButton()&amp#27;[0m
   &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI should see an error message containing &amp#27;[0m&amp#27;[32m&amp#27;[1m"Epic sadface"&amp#27;[0m &amp#27;[90m# com.iggy.cucumber.steps.LoginSteps.iShouldSeeAnErrorMessageContaining(java.lang.String)&amp#27;[0m
 ]]></system-out>
-    <system-err><![CDATA[Jul 13, 2026 10:13:23 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jul 13, 2026 10:33:48 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 150
-Jul 13, 2026 10:13:23 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jul 13, 2026 10:33:48 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 150.0.7871.115. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-Jul 13, 2026 10:13:24 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jul 13, 2026 10:33:49 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 150
-Jul 13, 2026 10:13:24 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jul 13, 2026 10:33:49 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 150.0.7871.115. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="Example #1.1" classname="CucumberRunner" time="2.782">
+  <testcase name="Example #1.1" classname="CucumberRunner" time="2.801">
     <system-out><![CDATA[
 Scenario Outline: Login with multiple user types &amp#27;[90m# features/login.feature:26&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on the SauceDemo login page&amp#27;[0m         &amp#27;[90m# com.iggy.cucumber.steps.LoginSteps.iAmOnTheSauceDemoLoginPage()&amp#27;[0m
@@ -165,17 +190,17 @@ Scenario Outline: Login with multiple user types &amp#27;[90m# features/login.fe
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI click the login button&amp#27;[0m                   &amp#27;[90m# com.iggy.cucumber.steps.LoginSteps.iClickTheLoginButton()&amp#27;[0m
   &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI should see &amp#27;[0m&amp#27;[32m&amp#27;[1m"inventory"&amp#27;[0m                  &amp#27;[90m# com.iggy.cucumber.steps.LoginSteps.iShouldSee(java.lang.String)&amp#27;[0m
 ]]></system-out>
-    <system-err><![CDATA[Jul 13, 2026 10:13:26 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jul 13, 2026 10:33:51 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 150
-Jul 13, 2026 10:13:26 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jul 13, 2026 10:33:51 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 150.0.7871.115. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-Jul 13, 2026 10:13:27 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jul 13, 2026 10:33:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 150
-Jul 13, 2026 10:13:27 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jul 13, 2026 10:33:52 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 150.0.7871.115. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="Example #1.2" classname="CucumberRunner" time="2.725">
+  <testcase name="Example #1.2" classname="CucumberRunner" time="2.691">
     <system-out><![CDATA[
 Scenario Outline: Login with multiple user types &amp#27;[90m# features/login.feature:27&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on the SauceDemo login page&amp#27;[0m         &amp#27;[90m# com.iggy.cucumber.steps.LoginSteps.iAmOnTheSauceDemoLoginPage()&amp#27;[0m
@@ -184,17 +209,17 @@ Scenario Outline: Login with multiple user types &amp#27;[90m# features/login.fe
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI click the login button&amp#27;[0m                   &amp#27;[90m# com.iggy.cucumber.steps.LoginSteps.iClickTheLoginButton()&amp#27;[0m
   &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI should see &amp#27;[0m&amp#27;[32m&amp#27;[1m"Epic sadface"&amp#27;[0m               &amp#27;[90m# com.iggy.cucumber.steps.LoginSteps.iShouldSee(java.lang.String)&amp#27;[0m
 ]]></system-out>
-    <system-err><![CDATA[Jul 13, 2026 10:13:29 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jul 13, 2026 10:33:54 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 150
-Jul 13, 2026 10:13:29 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jul 13, 2026 10:33:54 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 150.0.7871.115. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-Jul 13, 2026 10:13:30 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jul 13, 2026 10:33:55 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 150
-Jul 13, 2026 10:13:30 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jul 13, 2026 10:33:55 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 150.0.7871.115. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="Example #1.3" classname="CucumberRunner" time="2.661">
+  <testcase name="Example #1.3" classname="CucumberRunner" time="2.648">
     <system-out><![CDATA[
 Scenario Outline: Login with multiple user types &amp#27;[90m# features/login.feature:28&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on the SauceDemo login page&amp#27;[0m         &amp#27;[90m# com.iggy.cucumber.steps.LoginSteps.iAmOnTheSauceDemoLoginPage()&amp#27;[0m
@@ -203,78 +228,78 @@ Scenario Outline: Login with multiple user types &amp#27;[90m# features/login.fe
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI click the login button&amp#27;[0m                   &amp#27;[90m# com.iggy.cucumber.steps.LoginSteps.iClickTheLoginButton()&amp#27;[0m
   &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI should see &amp#27;[0m&amp#27;[32m&amp#27;[1m"Epic sadface"&amp#27;[0m               &amp#27;[90m# com.iggy.cucumber.steps.LoginSteps.iShouldSee(java.lang.String)&amp#27;[0m
 ]]></system-out>
-    <system-err><![CDATA[Jul 13, 2026 10:13:31 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jul 13, 2026 10:33:56 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 150
-Jul 13, 2026 10:13:31 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jul 13, 2026 10:33:56 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 150.0.7871.115. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-Jul 13, 2026 10:13:32 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jul 13, 2026 10:33:57 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 150
-Jul 13, 2026 10:13:32 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jul 13, 2026 10:33:57 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 150.0.7871.115. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="Verify products page title" classname="CucumberRunner" time="3.697">
+  <testcase name="Verify products page title" classname="CucumberRunner" time="2.739">
     <system-out><![CDATA[
 Scenario: Verify products page title                                   &amp#27;[90m# features/products.feature:6&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am logged in as &amp#27;[0m&amp#27;[32m&amp#27;[1m"standard_user"&amp#27;[0m&amp#27;[32m with password &amp#27;[0m&amp#27;[32m&amp#27;[1m"secret_sauce"&amp#27;[0m &amp#27;[90m# com.iggy.cucumber.steps.ProductsSteps.iAmLoggedInAs(java.lang.String,java.lang.String)&amp#27;[0m
   &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI should see the page title &amp#27;[0m&amp#27;[32m&amp#27;[1m"Products"&amp#27;[0m                          &amp#27;[90m# com.iggy.cucumber.steps.ProductsSteps.iShouldSeeThePageTitle(java.lang.String)&amp#27;[0m
 ]]></system-out>
-    <system-err><![CDATA[Jul 13, 2026 10:13:34 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jul 13, 2026 10:33:59 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 150
-Jul 13, 2026 10:13:34 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jul 13, 2026 10:33:59 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 150.0.7871.115. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-Jul 13, 2026 10:13:35 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jul 13, 2026 10:34:00 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 150
-Jul 13, 2026 10:13:35 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jul 13, 2026 10:34:00 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 150.0.7871.115. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="Verify product count" classname="CucumberRunner" time="2.594">
+  <testcase name="Verify product count" classname="CucumberRunner" time="2.66">
     <system-out><![CDATA[
 Scenario: Verify product count                                         &amp#27;[90m# features/products.feature:9&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am logged in as &amp#27;[0m&amp#27;[32m&amp#27;[1m"standard_user"&amp#27;[0m&amp#27;[32m with password &amp#27;[0m&amp#27;[32m&amp#27;[1m"secret_sauce"&amp#27;[0m &amp#27;[90m# com.iggy.cucumber.steps.ProductsSteps.iAmLoggedInAs(java.lang.String,java.lang.String)&amp#27;[0m
   &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI should see &amp#27;[0m&amp#27;[32m&amp#27;[1m6&amp#27;[0m&amp#27;[32m products&amp#27;[0m                                         &amp#27;[90m# com.iggy.cucumber.steps.ProductsSteps.iShouldSeeProducts(int)&amp#27;[0m
 ]]></system-out>
-    <system-err><![CDATA[Jul 13, 2026 10:13:38 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jul 13, 2026 10:34:02 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 150
-Jul 13, 2026 10:13:38 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jul 13, 2026 10:34:02 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 150.0.7871.115. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-Jul 13, 2026 10:13:39 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jul 13, 2026 10:34:03 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 150
-Jul 13, 2026 10:13:39 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jul 13, 2026 10:34:03 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 150.0.7871.115. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="Verify first product name" classname="CucumberRunner" time="2.689">
+  <testcase name="Verify first product name" classname="CucumberRunner" time="2.613">
     <system-out><![CDATA[
 Scenario: Verify first product name                                    &amp#27;[90m# features/products.feature:12&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am logged in as &amp#27;[0m&amp#27;[32m&amp#27;[1m"standard_user"&amp#27;[0m&amp#27;[32m with password &amp#27;[0m&amp#27;[32m&amp#27;[1m"secret_sauce"&amp#27;[0m &amp#27;[90m# com.iggy.cucumber.steps.ProductsSteps.iAmLoggedInAs(java.lang.String,java.lang.String)&amp#27;[0m
   &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe first product should be &amp#27;[0m&amp#27;[32m&amp#27;[1m"Sauce Labs Backpack"&amp#27;[0m               &amp#27;[90m# com.iggy.cucumber.steps.ProductsSteps.theFirstProductShouldBe(java.lang.String)&amp#27;[0m
 ]]></system-out>
-    <system-err><![CDATA[Jul 13, 2026 10:13:40 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jul 13, 2026 10:34:04 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 150
-Jul 13, 2026 10:13:40 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jul 13, 2026 10:34:04 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 150.0.7871.115. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-Jul 13, 2026 10:13:41 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jul 13, 2026 10:34:05 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 150
-Jul 13, 2026 10:13:41 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jul 13, 2026 10:34:05 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 150.0.7871.115. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="Sort products by price low to high" classname="CucumberRunner" time="3.506">
+  <testcase name="Sort products by price low to high" classname="CucumberRunner" time="2.818">
     <system-out><![CDATA[
 Scenario: Sort products by price low to high                           &amp#27;[90m# features/products.feature:15&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am logged in as &amp#27;[0m&amp#27;[32m&amp#27;[1m"standard_user"&amp#27;[0m&amp#27;[32m with password &amp#27;[0m&amp#27;[32m&amp#27;[1m"secret_sauce"&amp#27;[0m &amp#27;[90m# com.iggy.cucumber.steps.ProductsSteps.iAmLoggedInAs(java.lang.String,java.lang.String)&amp#27;[0m
   &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI sort products by &amp#27;[0m&amp#27;[32m&amp#27;[1m"Price (low to high)"&amp#27;[0m                        &amp#27;[90m# com.iggy.cucumber.steps.ProductsSteps.iSortProductsBy(java.lang.String)&amp#27;[0m
   &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe first product price should be &amp#27;[0m&amp#27;[32m&amp#27;[1m"$7.99"&amp#27;[0m                       &amp#27;[90m# com.iggy.cucumber.steps.ProductsSteps.theFirstProductPriceShouldBe(java.lang.String)&amp#27;[0m
 ]]></system-out>
-    <system-err><![CDATA[Jul 13, 2026 10:13:43 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jul 13, 2026 10:34:07 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 150
-Jul 13, 2026 10:13:43 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jul 13, 2026 10:34:07 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 150.0.7871.115. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-Jul 13, 2026 10:13:44 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jul 13, 2026 10:34:08 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 150
-Jul 13, 2026 10:13:44 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jul 13, 2026 10:34:08 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 150.0.7871.115. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
