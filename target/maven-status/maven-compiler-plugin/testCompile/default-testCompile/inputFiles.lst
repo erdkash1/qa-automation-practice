@@ -12,6 +12,7 @@
 /Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/src/test/java/com/iggy/playwright/SauceDemoProductsPlaywrightTests.java
 /Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/src/test/java/com/iggy/selenium/pagefactory/SauceDemoLoginPageFactory.java
 /Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/src/test/java/com/iggy/selenium/pagefactory/SauceDemoLoginPageFactoryTests.java
+/Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/src/test/java/com/iggy/selenium/saucedemo/CookieHandlingTests.java
 /Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/src/test/java/com/iggy/selenium/saucedemo/SauceDemoCartPage.java
 /Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/src/test/java/com/iggy/selenium/saucedemo/SauceDemoCartTests.java
 /Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/src/test/java/com/iggy/selenium/saucedemo/SauceDemoCheckoutPage.java
