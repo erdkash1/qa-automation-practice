@@ -6,12 +6,14 @@ import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
 import org.junit.jupiter.api.*;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import java.util.regex.Pattern;
+
+import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 
 public class SauceDemoLoginPagePlaywrightTests {
 
     private Page page;
-    private SauceDemoLoginPagePlaywright sauceDemoLoginPagePlaywright;
+    private SauceDemoLoginPagePlaywright loginPage;
     private static Playwright playwright;
     private static Browser browser;
 
@@ -31,7 +33,7 @@ public class SauceDemoLoginPagePlaywrightTests {
     @BeforeEach
     void createPage() {
         page = browser.newPage();
-        sauceDemoLoginPagePlaywright = new SauceDemoLoginPagePlaywright(page);
+        loginPage = new SauceDemoLoginPagePlaywright(page);
         page.navigate("https://www.saucedemo.com");
     }
 
@@ -40,23 +42,29 @@ public class SauceDemoLoginPagePlaywrightTests {
         page.close();
     }
 
-
     @Test
-    void shouldLoginWithValidCredentials(){
-        sauceDemoLoginPagePlaywright.enterUsername("standard_user");
-        sauceDemoLoginPagePlaywright.enterPassword("secret_sauce");
-        sauceDemoLoginPagePlaywright.clickLoginButton();
-        assertTrue(sauceDemoLoginPagePlaywright.getCurrentUrl().contains("inventory"));
+    void shouldLoginWithValidCredentials() {
+        page.fill("[data-test='username']", "standard_user");
+        page.fill("[data-test='password']", "secret_sauce");
+        page.click("[data-test='login-button']");
+        assertThat(page).hasURL(Pattern.compile(".*inventory.*")); // ← Playwright assertion
     }
 
-
-
     @Test
-    void shouldShowErrorWithInvalidCredentials(){
-        sauceDemoLoginPagePlaywright.enterUsername("wrong_user");
-        sauceDemoLoginPagePlaywright.enterPassword("wrong_pass");
-        sauceDemoLoginPagePlaywright.clickLoginButton();
-        assertTrue(sauceDemoLoginPagePlaywright.getErrorMessage().contains("Epic sadface"));
+    void shouldShowErrorWithInvalidCredentials() {
+        page.fill("[data-test='username']", "wrong_user");
+        page.fill("[data-test='password']", "wrong_pass");
+        page.click("[data-test='login-button']");
+        assertThat(page.locator("[data-test='error']"))
+                .containsText("Epic sadface"); // ← Playwright assertion
     }
 
+    @Test
+    void shouldDisplayProductsPageTitle() {
+        page.fill("[data-test='username']", "standard_user");
+        page.fill("[data-test='password']", "secret_sauce");
+        page.click("[data-test='login-button']");
+        assertThat(page.locator("[data-test='title']"))
+                .hasText("Products"); // ← Playwright assertion
+    }
 }
