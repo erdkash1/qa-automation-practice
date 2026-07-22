@@ -13,6 +13,8 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
@@ -96,6 +98,23 @@ public class SauceDemoLoginTests {
         sauceDemoLoginPage.clickLoginButton();
         String errorText = sauceDemoLoginPage.getErrorMessage();
         assertTrue(errorText.contains("Epic sadface"));
+    }
+
+    @Test
+    void shouldLoginOnFirefox() {
+        if (driver != null) driver.quit();
+
+        WebDriverManager.firefoxdriver().setup();
+        FirefoxOptions options = new FirefoxOptions();
+        options.addArguments("--headless");
+        driver = new FirefoxDriver(options);
+        driver.get("https://www.saucedemo.com");
+        sauceDemoLoginPage = new SauceDemoLoginPage(driver);
+
+        sauceDemoLoginPage.enterUsername("standard_user");
+        sauceDemoLoginPage.enterPassword("secret_sauce");
+        sauceDemoLoginPage.clickLoginButton();
+        assertTrue(driver.getCurrentUrl().contains("inventory"));
     }
 
 }
