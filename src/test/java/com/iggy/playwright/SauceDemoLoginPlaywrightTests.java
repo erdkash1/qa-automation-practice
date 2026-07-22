@@ -4,6 +4,8 @@ import com.microsoft.playwright.*;
 import com.microsoft.playwright.assertions.PlaywrightAssertions;
 import org.junit.jupiter.api.*;
 
+import java.util.regex.Pattern;
+
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -60,5 +62,37 @@ public class SauceDemoLoginPlaywrightTests {
         page.fill("[data-test='password']", "secret_sauce");
         page.click("[data-test='login-button']");
         assertTrue(page.locator("[data-test='title']").textContent().contains("Products"));
+    }
+
+    @Test
+    void shouldLoginOnFirefox() {
+        try (Playwright pw = Playwright.create()) {
+            Browser firefoxBrowser = pw.firefox().launch(
+                    new BrowserType.LaunchOptions().setHeadless(true)
+            );
+            Page firefoxPage = firefoxBrowser.newPage();
+            firefoxPage.navigate("https://www.saucedemo.com");
+            firefoxPage.fill("[data-test='username']", "standard_user");
+            firefoxPage.fill("[data-test='password']", "secret_sauce");
+            firefoxPage.click("[data-test='login-button']");
+            assertThat(firefoxPage).hasURL(Pattern.compile(".*inventory.*"));
+            firefoxBrowser.close();
+        }
+    }
+
+    @Test
+    void shouldLoginOnSafari() {
+        try (Playwright pw = Playwright.create()) {
+            Browser webkitBrowser = pw.webkit().launch(
+                    new BrowserType.LaunchOptions().setHeadless(true)
+            );
+            Page safariPage = webkitBrowser.newPage();
+            safariPage.navigate("https://www.saucedemo.com");
+            safariPage.fill("[data-test='username']", "standard_user");
+            safariPage.fill("[data-test='password']", "secret_sauce");
+            safariPage.click("[data-test='login-button']");
+            assertThat(safariPage).hasURL(Pattern.compile(".*inventory.*"));
+            webkitBrowser.close();
+        }
     }
 }
