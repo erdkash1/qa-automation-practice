@@ -29,6 +29,7 @@ com/iggy/selenium/theinternet/fileupload/FileUploadTests.class
 com/iggy/selenium/theinternet/LoginTests.class
 com/iggy/selenium/theinternet/iframe/IFramePage.class
 com/iggy/selenium/theinternet/TheInternetTests.class
+com/iggy/selenium/saucedemo/SauceDemoLoginFirefoxTests.class
 com/iggy/selenium/saucedemo/SauceDemoLoginPage.class
 com/iggy/selenium/saucedemo/SauceDemoProductsTests.class
 com/iggy/selenium/saucedemo/CookieHandlingTests.class
