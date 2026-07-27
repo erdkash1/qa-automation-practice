@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.iggy.playwright.SauceDemoCheckoutPlaywrightTests
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.48 s -- in com.iggy.playwright.SauceDemoCheckoutPlaywrightTests
