@@ -46,4 +46,5 @@ com/iggy/selenium/testng/SauceDemoLoginTestNG.class
 com/iggy/selenium/saucedemo/SauceDemoCheckoutTests.class
 com/iggy/selenium/saucedemo/SauceDemoLoginTests.class
 com/iggy/selenium/theinternet/hover/HoverPage.class
+com/iggy/playwright/PlaywrightNetworkTests.class
 com/iggy/selenium/theinternet/DynamicLoadingPage.class
