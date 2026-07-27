@@ -37,6 +37,7 @@ com/iggy/selenium/saucedemo/CookieHandlingTests.class
 com/iggy/selenium/theinternet/JavaScriptAlertsTests.class
 com/iggy/playwright/SauceDemoProductsPlaywrightTests.class
 com/iggy/cucumber/steps/ProductsSteps.class
+com/iggy/playwright/SauceDemoCheckoutPlaywrightTests.class
 com/iggy/selenium/saucedemo/SauceDemoProductsPage.class
 com/iggy/api/ProductApiTests2.class
 com/iggy/playwright/SauceDemoCartPlaywrightTests.class
