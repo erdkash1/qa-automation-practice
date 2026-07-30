@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.iggy.playwright.PlaywrightApiTests
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.720 s -- in com.iggy.playwright.PlaywrightApiTests
