@@ -33,6 +33,7 @@ com/iggy/selenium/theinternet/TheInternetTests.class
 com/iggy/selenium/saucedemo/SauceDemoLoginFirefoxTests.class
 com/iggy/selenium/saucedemo/SauceDemoLoginPage.class
 com/iggy/selenium/saucedemo/SauceDemoProductsTests.class
+com/iggy/playwright/PlaywrightApiTests.class
 com/iggy/selenium/saucedemo/CookieHandlingTests.class
 com/iggy/selenium/theinternet/JavaScriptAlertsTests.class
 com/iggy/playwright/SauceDemoProductsPlaywrightTests.class
