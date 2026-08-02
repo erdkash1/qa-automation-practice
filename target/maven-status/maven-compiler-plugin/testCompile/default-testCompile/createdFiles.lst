@@ -1,6 +1,7 @@
 com/iggy/cucumber/steps/LoginSteps.class
 com/iggy/cucumber/steps/CheckoutSteps.class
 com/iggy/cucumber/CucumberRunner.class
+com/iggy/playwright/ParallelPlaywrightTests.class
 com/iggy/selenium/saucedemo/SauceDemoCartPage.class
 com/iggy/selenium/theinternet/draganddrop/DragAndDropTests.class
 com/iggy/selenium/pagefactory/SauceDemoLoginPageFactoryTests.class
