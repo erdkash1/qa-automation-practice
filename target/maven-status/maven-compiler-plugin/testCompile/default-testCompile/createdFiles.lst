@@ -44,6 +44,7 @@ com/iggy/selenium/saucedemo/SauceDemoProductsPage.class
 com/iggy/api/ProductApiTests2.class
 com/iggy/playwright/SauceDemoCartPlaywrightTests.class
 com/iggy/playwright/PlaywrightScreenshotTests.class
+com/iggy/playwright/VisualRegressionTests.class
 com/iggy/cucumber/steps/SharedContext.class
 com/iggy/selenium/testng/SauceDemoLoginTestNG.class
 com/iggy/selenium/saucedemo/SauceDemoCheckoutTests.class
