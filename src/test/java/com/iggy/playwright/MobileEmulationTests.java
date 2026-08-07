@@ -5,7 +5,7 @@ import com.microsoft.playwright.options.Geolocation;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.parallel.Execution;
 import org.junit.jupiter.api.parallel.ExecutionMode;
-
+import com.microsoft.playwright.options.ColorScheme;
 import java.nio.file.Paths;
 import java.util.Arrays;
 
@@ -183,5 +183,22 @@ public class MobileEmulationTests {
 
         browser = context.browser();
         page = context.newPage();
+    }
+
+
+    @Test
+    void shouldLoadWithDarkModeEmulation() {
+        BrowserContext context = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(true))
+                .newContext(new Browser.NewContextOptions()
+                        .setViewportSize(390, 844)
+                        .setIsMobile(true)
+                        .setColorScheme(ColorScheme.DARK)
+                );
+
+        browser = context.browser();
+        page = context.newPage();
+        page.navigate("https://www.saucedemo.com");
+        page.screenshot(new Page.ScreenshotOptions()
+                .setPath(Paths.get("mobile-screenshots/dark-mode.png")));
     }
 }
