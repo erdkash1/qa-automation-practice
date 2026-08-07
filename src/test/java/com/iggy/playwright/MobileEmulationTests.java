@@ -143,4 +143,28 @@ public class MobileEmulationTests {
         assertEquals(390, width, "Width should be 390px (iPhone 13)");
         assertTrue(height > 0, "Height should be positive");
     }
+    @Test
+    void shouldOpenHamburgerMenuOnMobile() {
+        BrowserContext context = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(true))
+                .newContext(new Browser.NewContextOptions()
+                        .setViewportSize(390, 844)
+                        .setIsMobile(true)
+                        .setHasTouch(true)
+                );
+
+        browser = context.browser();
+        page = context.newPage();
+        page.navigate("https://www.saucedemo.com");
+
+        page.fill("[data-test='username']", "standard_user");
+        page.fill("[data-test='password']", "secret_sauce");
+        page.click("[data-test='login-button']");
+
+        page.click("#react-burger-menu-btn");
+
+        Locator logoutLink = page.locator("#logout_sidebar_link");
+        assertThat(logoutLink).isVisible();
+
+        System.out.println(" Mobile hamburger menu test passed!");
+    }
 }
