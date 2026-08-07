@@ -1,11 +1,13 @@
 package com.iggy.playwright;
 
 import com.microsoft.playwright.*;
+import com.microsoft.playwright.options.Geolocation;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.parallel.Execution;
 import org.junit.jupiter.api.parallel.ExecutionMode;
 
 import java.nio.file.Paths;
+import java.util.Arrays;
 
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
@@ -166,5 +168,20 @@ public class MobileEmulationTests {
         assertThat(logoutLink).isVisible();
 
         System.out.println(" Mobile hamburger menu test passed!");
+    }
+
+
+    @Test
+    void shouldEmulateMobileGeolocation() {
+        BrowserContext context = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(true))
+                .newContext(new Browser.NewContextOptions()
+                        .setViewportSize(390, 844)
+                        .setIsMobile(true)
+                        .setGeolocation(new Geolocation(48.8584, 2.2945))
+                        .setPermissions(Arrays.asList("geolocation"))
+                );
+
+        browser = context.browser();
+        page = context.newPage();
     }
 }
