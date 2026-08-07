@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.iggy.playwright.MobileEmulationTests" time="9.635" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.iggy.playwright.MobileEmulationTests" time="10.337" tests="7" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -13,7 +13,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/target/surefire/surefirebooter-20260807000237821_3.jar /Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/target/surefire 2026-08-07T00-02-37_716-jvmRun1 surefire-20260807000237821_1tmp surefire_0-20260807000237821_2tmp"/>
+    <property name="sun.java.command" value="/Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/target/surefire/surefirebooter-20260807000628909_3.jar /Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/target/surefire 2026-08-07T00-06-28_811-jvmRun1 surefire-20260807000628909_1tmp surefire_0-20260807000628909_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="MobileEmulationTests"/>
@@ -32,7 +32,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/target/surefire/surefirebooter-20260807000237821_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/target/surefire/surefirebooter-20260807000628909_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="21.0.10+8-LTS-217"/>
@@ -60,7 +60,7 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="shouldVerifyMobileViewport" classname="com.iggy.playwright.MobileEmulationTests" time="1.796">
+  <testcase name="shouldVerifyMobileViewport" classname="com.iggy.playwright.MobileEmulationTests" time="1.515">
     <system-out><![CDATA[ Mobile viewport: 390x844
 ]]></system-out>
     <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
@@ -68,22 +68,23 @@ SLF4J(W): Defaulting to no-operation (NOP) logger implementation
 SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
 ]]></system-err>
   </testcase>
-  <testcase name="shouldLoginOnIPhone13" classname="com.iggy.playwright.MobileEmulationTests" time="1.32">
+  <testcase name="shouldLoginOnIPhone13" classname="com.iggy.playwright.MobileEmulationTests" time="1.169">
     <system-out><![CDATA[ iPhone 13 test passed!
    Viewport: 390x844
 ]]></system-out>
   </testcase>
-  <testcase name="shouldOpenHamburgerMenuOnMobile" classname="com.iggy.playwright.MobileEmulationTests" time="0.992">
+  <testcase name="shouldOpenHamburgerMenuOnMobile" classname="com.iggy.playwright.MobileEmulationTests" time="1.024">
     <system-out><![CDATA[ Mobile hamburger menu test passed!
 ]]></system-out>
   </testcase>
-  <testcase name="shouldEmulateMobileGeolocation" classname="com.iggy.playwright.MobileEmulationTests" time="0.422"/>
-  <testcase name="shouldLoginOnPixel5Android" classname="com.iggy.playwright.MobileEmulationTests" time="1.205">
+  <testcase name="shouldLoadWithDarkModeEmulation" classname="com.iggy.playwright.MobileEmulationTests" time="0.924"/>
+  <testcase name="shouldEmulateMobileGeolocation" classname="com.iggy.playwright.MobileEmulationTests" time="0.432"/>
+  <testcase name="shouldLoginOnPixel5Android" classname="com.iggy.playwright.MobileEmulationTests" time="1.164">
     <system-out><![CDATA[ Pixel 5 Android test passed!
    Viewport: 393x851
 ]]></system-out>
   </testcase>
-  <testcase name="shouldLoginOnIPad" classname="com.iggy.playwright.MobileEmulationTests" time="1.137">
+  <testcase name="shouldLoginOnIPad" classname="com.iggy.playwright.MobileEmulationTests" time="1.284">
     <system-out><![CDATA[ iPad test passed!
    Viewport: 768x1024
 ]]></system-out>
