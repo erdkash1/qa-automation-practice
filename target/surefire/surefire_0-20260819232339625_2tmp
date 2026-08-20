@@ -1,6 +1,0 @@
-#surefire_0
-#Wed Aug 19 23:23:39 EDT 2026
-allure.results.directory=/Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice/target/allure-results
-basedir=/Users/erdenesurenshirmen/IdeaProjects/qa-automation-practice
-localRepository=/Users/erdenesurenshirmen/.m2/repository
-test=AccessibilityTests
